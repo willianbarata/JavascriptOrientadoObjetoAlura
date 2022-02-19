@@ -17,3 +17,4 @@ console.log("valor: ", valor);
 console.log(conta1);
 console.log(conta2);
 
+console.log(ContaCorrente.numeroDeContas);
