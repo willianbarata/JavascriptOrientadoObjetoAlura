@@ -19,12 +19,13 @@ contaCorrenteRicardo.depositar(500);
 const conta2 = new ContaCorrente();
 //conta2.cliente = null;
 conta2.cliente = new Cliente();
-conta2.cliente.nome = "Alice";
+conta2.cliente = cliente1;
 conta2.agencia = 102;
 
 let valor = 200;
 contaCorrenteRicardo.transferir(valor, conta2);
 
 console.log("valor: ", valor);
-console.log(contaCorrenteRicardo);
-
+console.log(conta2);
+//conta2.saldo = 300; método possui apenas getter
+console.log(conta2.saldo);
