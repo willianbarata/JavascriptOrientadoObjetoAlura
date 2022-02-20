@@ -2,11 +2,6 @@ import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
     static numeroDeContas = 0;
-    agencia;
-    _cliente;
-    // #saldo = 0; opção para privado
-    _saldo = 0;
-
 
     set cliente(novoValor){
         if(novoValor instanceof Cliente){
@@ -26,6 +21,7 @@ export class ContaCorrente{
         this.agencia = agencia;
         this.cliente = cliente;
         ContaCorrente.numeroDeContas += 1;
+        this._saldo = 0;
     }
 
 
